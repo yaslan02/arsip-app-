@@ -39,7 +39,7 @@ public class ExportDBConfig {
 	public DataSource dataSource() {
 	    HikariDataSource ds = new HikariDataSource();
 	    ds.setDriverClassName("org.h2.Driver");
-	    ds.setJdbcUrl("jdbc:h2:mem:penjualan;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE");
+	    ds.setJdbcUrl("jdbc:h2:file:./data/penjualan;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE");
 	    ds.setUsername("sa");
 	    ds.setPassword("");
 	    return ds;
